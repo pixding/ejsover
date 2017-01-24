@@ -9,4 +9,11 @@ router.get('/detail', function(req, res, next) {
   res.render('customer-detail', { title: 'Express' });
 });
 
+router.get('/gongdan', function(req, res, next) {
+  res.render('customer-gongdan', { title: 'Express' });
+});
+router.get('/gongdan-list', function(req, res, next) {
+  res.render('gongdan-list', { title: 'Express' });
+});
+
 module.exports = router;

@@ -26,7 +26,7 @@
             </li>
             <li class="nav-item">
                 <a href="javascript:;" class="nav-link nav-toggle">
-                    <i class="icon-diamond"></i>
+                    <i class="icon-layers"></i>
                     <span class="title">院校管理</span>
                     <span class="selected"></span>
                     <span class="arrow"></span>
@@ -44,14 +44,19 @@
             </li>
             <li class="nav-item active open">
                 <a href="javascript:;" class="nav-link nav-toggle">
-                    <i class="icon-puzzle"></i>
+                    <i class="icon-user"></i>
                     <span class="title">客户管理</span>
                     <span class="arrow open"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="nav-item  active">
-                        <a href="components_date_time_pickers.html" class="nav-link ">
+                    <li class="nav-item  <% if(leftnav=="kh-all"){%> active <%}%>">
+                        <a href="/" class="nav-link ">
                             <span class="title">所有客户</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  <% if(leftnav=="kh-gd"){%> active <%}%>">
+                        <a href="/gongdan-list" class="nav-link ">
+                            <span class="title">工单处理</span>
                         </a>
                     </li>
                     <li class="nav-item  ">
@@ -65,7 +70,7 @@
             </li>
             <li class="nav-item  ">
                 <a href="javascript:;" class="nav-link nav-toggle">
-                    <i class="icon-settings"></i>
+                    <i class="icon-docs"></i>
                     <span class="title">文书管理</span>
                     <span class="arrow"></span>
                 </a>
@@ -73,6 +78,26 @@
                     <li class="nav-item  ">
                         <a href="form_controls.html" class="nav-link ">
                             <span class="title">文书管理</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="nav-item  ">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-settings"></i>
+                    <span class="title">系统管理</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item  ">
+                        <a href="form_controls.html" class="nav-link ">
+                            <span class="title">系统设置</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="form_controls.html" class="nav-link ">
+                            <span class="title">个人信息</span>
                         </a>
                     </li>
 
