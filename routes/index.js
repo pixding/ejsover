@@ -16,4 +16,11 @@ router.get('/gongdan-list', function(req, res, next) {
   res.render('gongdan-list', { title: 'Express' });
 });
 
+router.get("/:pagename",function(req,res,next){
+  res.render(req.params.pagename, { title: 'Express' });
+})
+router.get("/:page/:pagename",function(req,res,next){
+  res.render(req.params.page+"/"+req.params.pagename, { title: 'Express' });
+})
+
 module.exports = router;

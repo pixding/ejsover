@@ -1,0 +1,104 @@
+
+
+  <div class="tabbable-line">
+      <ul class="nav nav-tabs ">
+          <li class="active">
+              <a href="#tab_15_1" data-toggle="tab"> 客户信息 </a>
+          </li>
+          <li>
+              <a href="#tab_15_2" data-toggle="tab"> 申请人信息 </a>
+          </li>
+      </ul>
+      <div class="tab-content">
+          <div class="tab-pane active" id="tab_15_1">
+
+            <div class="row">
+
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">留学目标：</label>
+                    <span>博士</span>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">意向国家：</label>
+                    <span>美国</span>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">意向专业：</label>
+                    <span>国际金融与贸易</span>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">意向留学时间：</label>
+                    <span>2018.1</span>
+                  </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="tab-pane" id="tab_15_2">
+            <div class="row">
+
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">申请人姓名：</label>
+                    <span>王一仁</span>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">性别：</label>
+                    <span>男</span>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">身份证：</label>
+                    <span>440580199309091109</span>
+                  </div>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">毕业院校：</label>
+                    <span>上海浦东中学</span>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">学校性质：：</label>
+                    <span>高中</span>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">平均成绩：</label>
+                    <span>90分</span>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-group">
+                    <label class="control-label">奖项荣誉：</label>
+                    <span>省级三好学生</span>
+                  </div>
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+
+      </div>
+    </div>

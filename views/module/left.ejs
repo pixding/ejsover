@@ -24,7 +24,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item <% if(leftnav=="school"){%> active open <%}%>">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-layers"></i>
                     <span class="title">院校管理</span>
@@ -32,9 +32,9 @@
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="nav-item">
-                        <a href="ui_colors.html" class="nav-link ">
-                            <span class="title">院校检索</span>
+                    <li class="nav-item <% if(leftnav=="school"){%> active <%}%>">
+                        <a href="/school/schoollist" class="nav-link ">
+                            <span class="title">院校列表</span>
                             <span class="selected"></span>
                         </a>
                     </li>
@@ -42,30 +42,18 @@
 
                 </ul>
             </li>
-            <li class="nav-item active open">
+            <li class="nav-item <% if(leftnav.indexOf("customer")>=0){%> active <%}%>">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-user"></i>
                     <span class="title">客户管理</span>
                     <span class="arrow open"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="nav-item  <% if(leftnav=="kh-all"){%> active <%}%>">
-                        <a href="/" class="nav-link ">
+                    <li class="nav-item  <% if(leftnav=="customer"){%> active <%}%>">
+                        <a href="/customer/customerlist" class="nav-link ">
                             <span class="title">所有客户</span>
                         </a>
                     </li>
-                    <li class="nav-item  <% if(leftnav=="kh-gd"){%> active <%}%>">
-                        <a href="/gongdan-list" class="nav-link ">
-                            <span class="title">工单处理</span>
-                        </a>
-                    </li>
-                    <li class="nav-item  ">
-                        <a href="components_color_pickers.html" class="nav-link ">
-                            <span class="title">跟进记录</span>
-                        </a>
-                    </li>
-
-
                 </ul>
             </li>
             <li class="nav-item  ">
