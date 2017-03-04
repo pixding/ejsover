@@ -101,11 +101,10 @@
                                         <th >
 
                                         </th>
-                                        <th>编号</th>
                                         <th>来源/负责人</th>
 
                                         <th>客户联系方式</th>
-                                        <th>申请明细</th>
+                                        <th>留学意向</th>
                                         <th>客户状态</th>
 
                                         <th class="numeric" style="text-align:center;"> 操作 </th>
@@ -116,15 +115,14 @@
                                   <%for(var i =0;i<15;i++){%>
                                     <tr>
                                       <td> <input type="checkbox" class="checkboxes" value="1" /> </td>
-                                      <td>KH00000<%= i+1%></td>
                                       <td>新东方留学有限公司/王伟(18100323333) </td>
 
                                       <td>李先生(13700993233)</td>
                                       <td>美国/硕士/生物工程</td>
                                       <td><%= status[i%4]%></td>
                                       <td style="text-align:center;" >
+                                        <a href="/customer/create" style="margin-right:10px;"><i class="fa fa-link"></i>留学申请</a>
                                         <a href="/customer/customerdetail" style="margin-right:10px;"><i class="fa fa-link"></i>查看详情</a>
-                                        <a href="/customer/customeradd"><i class="fa fa-pencil"></i>编辑</a>
                                       </td>
                                     </tr>
                                     <%}%>

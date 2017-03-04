@@ -68,44 +68,101 @@
                                                 <div class="tab-content">
                                                     <!-- PERSONAL INFO TAB -->
                                                     <div class="tab-pane active" id="tab_1_1">
-                                                        <form role="form" action="#">
-                                                            <div class="form-group">
-                                                                <label class="control-label">院校名称：</label>
-                                                                <input type="text" placeholder="" class="form-control" /> </div>
-                                                            <div class="form-group">
-                                                                <label class="control-label">院校LOGO：</label>
-                                                                <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                  <span class="btn green btn-file">
-                                                                      <span class="fileinput-new"> Select file </span>
-                                                                      <span class="fileinput-exists"> Change </span>
-                                                                      <input type="file" name="..."> </span>
-                                                                  <span class="fileinput-filename"> </span> &nbsp;
-                                                                  <a href="javascript:;" class="close fileinput-exists" data-dismiss="fileinput"> </a>
+                                                        <form role="form" class="form-horizontal" action="#">
+                                                          <div class="row">
+                                                            <div class="col-md-6">
+                                                              <div class="form-group">
+                                                                <label class="control-label col-md-3">院校名称
+                                                                    <span class="required"> * </span>
+                                                                </label>
+                                                                  <div class="col-md-6">
+                                                                      <input type="text" placeholder="" class="form-control" />
+                                                                  </div>
+
                                                               </div>
                                                             </div>
+
+                                                            <div class="col-md-6">
+                                                              <div class="form-group">
+                                                                  <label class="control-label col-md-3">院校LOGO：</label>
+                                                                  <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                                    <span class="btn green btn-file">
+                                                                        <span class="fileinput-new"> 选择文件 </span>
+                                                                        <span class="fileinput-exists"> 更换 </span>
+                                                                        <input type="file" name="..."> </span>
+                                                                    <span class="fileinput-filename"> </span> &nbsp;
+                                                                    <a href="javascript:;" class="close fileinput-exists" data-dismiss="fileinput"> </a>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+
+                                                          </div>
+
+
+
+                                                          <div class="row">
+
+                                                            <div class="col-md-6">
+                                                              <div class="form-group">
+                                                                <label class="control-label col-md-3">托福成绩：
+                                                                </label>
+                                                                  <div class="col-md-6">
+                                                                      <input type="text" placeholder="" class="form-control input-inline input-small" /><span class="help-inline"> 分</span>
+                                                                  </div>
+
+                                                              </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                              <div class="form-group">
+                                                                <label class="control-label col-md-3">雅思成绩：
+                                                                </label>
+                                                                  <div class="col-md-6">
+                                                                      <input type="text" placeholder="" class="form-control input-inline input-small" /><span class="help-inline"> 分</span>
+                                                                  </div>
+
+                                                              </div>
+                                                            </div>
+                                                          </div>
+
                                                             <div class="row">
 
                                                               <div class="col-md-6">
-                                                              <div class="form-group">
-                                                                  <label class="control-label">院校地址：</label>
-                                                                  <input type="text" placeholder="" class="form-control" /> </div>
+                                                                <div class="form-group">
+                                                                  <label class="control-label col-md-3">院校地址：
+                                                                  </label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="text" placeholder="" class="form-control" />
+                                                                    </div>
+
+                                                                </div>
                                                               </div>
+
                                                               <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label class="control-label">联系方式：</label>
-                                                                    <input type="text"  class="form-control" /> </div>
+                                                                  <label class="control-label col-md-3">网址：
+                                                                  </label>
+                                                                    <div class="col-md-6">
+                                                                        <input type="text" placeholder="" class="form-control" />
+                                                                    </div>
+
+                                                                </div>
                                                               </div>
                                                             </div>
 
                                                             <div class="form-group">
-                                                                <label class="control-label">院校简介：</label>
-                                                                <textarea class="form-control" rows="10" ></textarea>
+
+                                                              <label class="control-label col-md-1" style="width:12.36%;">院校简介：
+                                                              </label>
+                                                                <div class="col-md-9">
+                                                                    <textarea class="form-control" rows="10" ></textarea>
+                                                                </div>
+
                                                             </div>
                                                             <div class="form-group">
-                                                                <label class="control-label">网址：</label>
-                                                                <input type="text" placeholder="" class="form-control" /> </div>
-                                                            <div class="margiv-top-10">
-                                                                <a href="javascript:;" class="btn green"> 保存 </a>
+                                                                <div class="col-md-offset-1 col-md-12" style="margin-left:12.36%;">
+                                                                    <a href="#" class="btn green">保存</a>
+                                                                </div>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -197,34 +254,13 @@
                   <form role="form" action="#">
                       <div class="row">
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                              <label class="control-label">所属学院</label>
-                              <select class="form-control input-small">
-                                  <option>请选择</option>
-                                  <option>法学院</option>
-                                  <option>商学院</option>
-                                  <option>建筑学院</option>
-                                  <option>计算机学院</option>
-                              </select>
-                            </div>
-                        </div>
+
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label class="control-label">选择专业：</label>
-                            <select class="form-control input-small">
-                                <option>请选择</option>
-                                <option>商业法律</option>
-                                <option>土木工程</option>
-                                <option>计算机科学技术</option>
-                                <option>国际金融</option>
-                            </select>
+                            <label class="control-label">专业名称：</label>
+                            <input type="text" placeholder="" class="form-control" />
                           </div>
                         </div>
-
-                      </div>
-                      <div class="row">
-
                         <div class="col-md-6">
                           <div class="form-group">
                             <label class="control-label">学历：</label>
@@ -236,20 +272,6 @@
                                 <option>博士</option>
                             </select>
                           </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label class="control-label">学制：</label>
-                              <select class="form-control input-small">
-                                  <option>请选择</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                  <option>6</option>
-                                  <option>7</option>
-                                  <option>8</option>
-                              </select>
-                            </div>
                         </div>
                       </div>
                       <div class="form-group">

@@ -1,4 +1,4 @@
-<% var leftnav="school"%>
+<% var leftnav="work"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,58 +33,35 @@
                     <div class="page-bar">
                         <ul class="page-breadcrumb">
                             <li>
-                                <a href="/school/schoollist">院校管理</a>
+                                <a href="/work/worklist">工单处理</a>
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <a href="/school/schoollist">院校列表</a>
+                                <a href="/work/worklist">待处理工单</a>
                             </li>
                         </ul>
                     </div>
                     <!-- END PAGE BAR -->
                     <!-- BEGIN PAGE TITLE-->
-                    <h3 class="page-title"> 院校列表</h3>
+                    <h3 class="page-title"> 待处理工单</h3>
                     <!-- END PAGE TITLE-->
                     <!-- END PAGE HEADER-->
 
-                      <div class="row">
-                        <div class="col-md-12">
-                          <a id="genpassword" href="/school/schooladd" class="btn btn-success" ><i class="fa fa-arrow-left fa-plus"></i> 添加院校</a>
-
-                        </div>
-                      </div>
+                    <%
+                    var status = ['材料准备','申请已提交','已退款','完成-未录取','完成-录取'];
+                    %>
                       <form class="form-inline" role="form" style="margin-bottom:15px; float:right;">
 
                         <div class="form-group">
                             <select class="form-control input-small">
-                              <option>请选择国家</option>
-                               <option>美国</option>
-                               <option>英国</option>
-                               <option>日本</option>
-                               <option>澳大利亚</option>
+                              <option>请选择工单状态</option>
+                              <%for(var j=0;j<status.length;j++){%>
+                               <option><%= status[j]%></option>
+                               <%}%>
                            </select>
                         </div>
-                            <div class="form-group">
-                                <select class="form-control input-small">
-                                  <option>请选择学历</option>
-                                   <option>高中</option>
-                                   <option>学士</option>
-                                   <option>硕士</option>
-                                   <option>博士</option>
-                               </select>
-                            </div>
 
-                            <div class="form-group">
-                                <select class="form-control input-small">
-                                  <option>请选择专业</option>
-                                   <option>医学</option>
-                                   <option>计算机</option>
-                                   <option>生物工作</option>
-                                   <option>建筑</option>
-                                   <option>法学</option>
-                                   <option>日语</option>
-                               </select>
-                            </div>
+
 
                           <div class="input-group input-medium">
                               <input type="text" class="form-control" placeholder="关键字">
@@ -104,10 +81,12 @@
 
                                         </th>
 
-                                        <th> 学校 </th>
-                                        <th> 托福/雅思 </th>
-                                        <th class="numeric"> 学历 </th>
-                                        <th class="numeric"> 专业 </th>
+                                        <th> 工单编号 </th>
+                                        <th class="numeric"> 客户 </th>
+                                        <th class="numeric"> 创建/处理时间  </th>
+                                        <th class="numeric"> 处理人 </th>
+                                        <th class="numeric">  工单状态</th>
+                                        <th class="numeric">  支付状态</th>
                                         <th class="numeric"> 操作 </th>
                                     </tr>
                                 </thead>
@@ -115,13 +94,16 @@
                                   <%for(var i =0;i<15;i++){%>
                                     <tr>
                                         <td> <input type="checkbox" class="checkboxes" value="1" /> </td>
-                                        <td> <a href="/school/schooldetail">哈佛大学</a> </td>
-                                        <td>--/5.5分</td>
-                                        <td class="numeric"> 本科、研究生 </td>
-                                        <td class="numeric"> 软件工程、会计学、医学、生物工程...等46个专业 </td>
+                                        <td> <a href="#">GD10433<%= i%></a> </td>
+                                        <td class="numeric"> <a href="/customer/customerdetail">张三</a> </td>
+                                        <td class="numeric"> 2017-01-12 12:00 / 2017-02-09 09:22</td>
+                                        <td class="numeric"> 小孙</td>
+                                        <td class="numeric"> <%= status[i%5]%></td>
+                                        <td class="numeric"> 已付订金3000元</td>
                                         <td style="text-align:center;" >
-                                          <a href="/school/schooldetail" style="margin-right:10px;"><i class="fa fa-link"></i>查看详情</a>
-                                          <a href="/school/schooladd"><i class="fa fa-pencil"></i>编辑</a> </td>
+                                          <a href="#" style="margin-right:10px;"><i class="fa fa-link"></i>查看详情</a>
+                                          <a href="/customer/create"><i class="fa fa-pencil"></i>编辑</a>
+                                        </td>
                                     </tr>
                                   <%}%>
 

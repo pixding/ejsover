@@ -1,0 +1,222 @@
+<% var leftnav="customer"%>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>留学生管理平台</title>
+        <% include ../module/head %>
+        <link href="/css/customer.css" rel="stylesheet" type="text/css" />
+
+        <link href="/global/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <!-- END HEAD -->
+
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+        <!-- BEGIN HEADER -->
+        <% include ../module/top%>
+        <!-- END HEADER -->
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"> </div>
+        <!-- END HEADER & CONTENT DIVIDER -->
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <% include ../module/left%>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content">
+                    <!-- BEGIN PAGE HEADER-->
+
+                    <!-- BEGIN PAGE BAR -->
+                    <div class="page-bar">
+                        <ul class="page-breadcrumb">
+                            <li>
+                                <a href="/customer/customerlist">客户管理</a>
+                                <i class="fa fa-circle"></i>
+                            </li>
+                            <li>
+                                <a href="/customer/customerlist">客户列表</a>
+                                <i class="fa fa-circle"></i>
+                            </li>
+                            <li>
+                                <span>王张学</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END PAGE BAR -->
+                    <!-- BEGIN PAGE TITLE-->
+                    <h3 class="page-title"> 创建留学工单
+                    </h3>
+
+                    <div class="portlet-body">
+                        <div class="mt-element-step">
+                          <div class="row step-thin">
+                            <div class="col-md-4 bg-grey mt-step-col active">
+                                <div class="mt-step-number bg-white font-grey">1</div>
+                                <div class="mt-step-title uppercase font-grey-cascade">信息完善</div>
+                                <div class="mt-step-content font-grey-cascade">筛选学校、填写基本信息</div>
+                            </div>
+                            <div class="col-md-4 bg-grey mt-step-col">
+                                <div class="mt-step-number bg-white font-grey">2</div>
+                                <div class="mt-step-title uppercase font-grey-cascade">文书设置</div>
+                                <div class="mt-step-content font-grey-cascade">申请留学所需的材料</div>
+                            </div>
+                            <div class="col-md-4 bg-grey mt-step-col">
+                                <div class="mt-step-number bg-white font-grey">3</div>
+                                <div class="mt-step-title uppercase font-grey-cascade">工单确认</div>
+                                <div class="mt-step-content font-grey-cascade">确认信息并提交工单</div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="portlet-body form" style="margin-top:25px;">
+                     <form action="#" class="form-horizontal" id="submit_form" method="POST">
+                         <div class="form-wizard">
+                             <div class="form-body">
+                  <div class="tab-content">
+                      <div class="tab-pane active" id="tab1">
+                          <div class="form-group">
+                              <label class="control-label col-md-3">申请人姓名
+                                  <span class="required"> * </span>
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" class="form-control input-small" name="username" />
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">联系方式
+                                  <span class="required"> * </span>
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" class="form-control input-small" name="username" />
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">Email
+                                  <span class="required"> * </span>
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" class="form-control" name="username" />
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">证件信息
+                                  <span class="required"> * </span>
+                              </label>
+                              <div class="col-md-4">
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn green dropdown-toggle" data-toggle="dropdown">身份证
+                                            <i class="fa fa-angle-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="javascript:;"> 身份证 </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;"> 护照 </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- /btn-group -->
+                                    <input type="text" class="form-control"> </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="control-label col-md-3">申请学校/专业
+                                  <span class="required"> * </span>
+                              </label>
+                              <div class="col-md-6">
+                                <a href="#create" data-toggle="modal" class="btn btn-sm red"> 添加
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                                <span style="color:#999; font-size:12px; margin-left:15px;">最多添加3所学校</span>
+
+                                <div class="table-scrollable">
+
+                                <table class="table table-hover table-light">
+                                  <thead>
+                                      <tr>
+                                          <th class="numeric" style="width:200px;"> 学校 </th>
+                                          <th> 专业 </th>
+                                          <th class="numeric" style="width:100px;">  </th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                        <td> <a target="_blank" href="/school/schooldetail">哈佛大学</a> </td>
+                                        <td class="numeric">
+                                          <select class="form-control input-inline input-sm input-small">
+                                            <option value="1">请选择</option>
+                                            <option value="2">国际金融</option>
+                                            <option value="e">会计</option>
+                                        </select>
+                                       </td>
+
+                                        <td style="text-align:center;" >
+                                          <a href="/school/schooldetail" style="margin-right:10px;">
+                                            <i class="fa fa-trash-o"></i>删除
+                                          </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a target="_blank" href="/school/schooldetail">剑桥大学东南校区</a> </td>
+                                        <td class="numeric">
+                                          <select class="form-control input-inline input-sm input-small">
+                                            <option value="1">请选择</option>
+                                            <option value="2">计算机科学与计术</option>
+                                            <option value="e">生命科学</option>
+                                        </select>
+                                       </td>
+
+                                        <td style="text-align:center;" >
+                                          <a href="/school/schooldetail" style="margin-right:10px;">
+                                            <i class="fa fa-trash-o"></i>删除
+                                          </a>
+                                        </td>
+                                    </tr>
+
+
+                                  </tbody>
+                              </table>
+                            </div>
+
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <div class="col-md-offset-3 col-md-10">
+                                  <a href="/customer/create2" class="btn green">下一步</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                </div></div></form></div>
+
+                    <!-- END PAGE TITLE-->
+                    <!-- END PAGE HEADER-->
+
+                </div>
+                <!-- END CONTENT BODY -->
+            </div>
+            <!-- END CONTENT -->
+        </div>
+
+        <% include ../module/selectSchool%>
+
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <% include ../module/bottom%>
+        <!-- END FOOTER -->
+        <% include ../module/foot%>
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript"></script>
+        <script src="/global/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+    </body>
+
+</html>

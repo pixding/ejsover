@@ -56,16 +56,31 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item  <% if(leftnav=="work"){%> active open <%}%>">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-bulb"></i>
+                    <span class="title">工单处理</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item  <% if(leftnav=="work"){%> active <%}%>">
+                        <a href="/work/worklist" class="nav-link ">
+                            <span class="title">待处理工单</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
             <li class="nav-item  ">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-docs"></i>
-                    <span class="title">文书管理</span>
+                    <span class="title">字典定义</span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
                     <li class="nav-item  ">
-                        <a href="form_controls.html" class="nav-link ">
-                            <span class="title">文书管理</span>
+                        <a href="#" class="nav-link ">
+                            <span class="title">文书字典</span>
                         </a>
                     </li>
 
@@ -79,12 +94,12 @@
                 </a>
                 <ul class="sub-menu">
                     <li class="nav-item  ">
-                        <a href="form_controls.html" class="nav-link ">
+                        <a href="#" class="nav-link ">
                             <span class="title">系统设置</span>
                         </a>
                     </li>
                     <li class="nav-item  ">
-                        <a href="form_controls.html" class="nav-link ">
+                        <a href="#" class="nav-link ">
                             <span class="title">个人信息</span>
                         </a>
                     </li>
