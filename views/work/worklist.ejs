@@ -48,7 +48,7 @@
                     <!-- END PAGE HEADER-->
 
                     <%
-                    var status = ['材料准备','申请已提交','已退款','完成-未录取','完成-录取'];
+                    var status = ['材料准备','申请已提交','完成'];
                     %>
                       <form class="form-inline" role="form" style="margin-bottom:15px; float:right;">
 
@@ -80,8 +80,6 @@
                                         <th >
 
                                         </th>
-
-                                        <th> 工单编号 </th>
                                         <th class="numeric"> 客户 </th>
                                         <th class="numeric"> 创建/处理时间  </th>
                                         <th class="numeric"> 处理人 </th>
@@ -94,15 +92,13 @@
                                   <%for(var i =0;i<15;i++){%>
                                     <tr>
                                         <td> <input type="checkbox" class="checkboxes" value="1" /> </td>
-                                        <td> <a href="#">GD10433<%= i%></a> </td>
                                         <td class="numeric"> <a href="/customer/customerdetail">张三</a> </td>
                                         <td class="numeric"> 2017-01-12 12:00 / 2017-02-09 09:22</td>
                                         <td class="numeric"> 小孙</td>
-                                        <td class="numeric"> <%= status[i%5]%></td>
+                                        <td class="numeric"> <%= status[i%3]%></td>
                                         <td class="numeric"> 已付订金3000元</td>
                                         <td style="text-align:center;" >
-                                          <a href="#" style="margin-right:10px;"><i class="fa fa-link"></i>查看详情</a>
-                                          <a href="/customer/create"><i class="fa fa-pencil"></i>编辑</a>
+                                          <a href="/work/workdetail" style="margin-right:10px;"><i class="fa fa-link"></i>查看详情</a>
                                         </td>
                                     </tr>
                                   <%}%>

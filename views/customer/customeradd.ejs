@@ -59,39 +59,45 @@
                                                     <li class="active">
                                                         <a href="#tab_1_1" data-toggle="tab" >客户基本信息</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#tab_1_4" data-toggle="tab">申请人信息</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#tab_1_5" data-toggle="tab">其它</a>
-                                                    </li>
                                                 </ul>
                                             </div>
                                             <div class="portlet-body">
-                                                <div class="tab-content">
+                                                <div class="tab-content" style="width:90%;">
                                                     <!-- PERSONAL INFO TAB -->
                                                     <div class="tab-pane active" id="tab_1_1">
                                                         <form role="form" action="#">
                                                             <div class="row">
 
-                                                              <div class="col-md-6">
+                                                              <div class="col-md-3">
                                                                 <div class="form-group">
                                                                   <label class="control-label">客户姓名</label>
                                                                   <input type="text" placeholder="" class="form-control" />
                                                                 </div>
                                                               </div>
-                                                              <div class="col-md-6">
+                                                              <div class="col-md-3">
                                                                   <div class="form-group">
                                                                     <label class="control-label">联系方式：</label>
                                                                     <input type="text"  class="form-control" />
                                                                   </div>
                                                               </div>
+                                                              <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label class="control-label">与申请人关系：</label>
+                                                                    <select class="form-control input-small">
+                                                                      <option>请选择</option>
+                                                                       <option>家长</option>
+                                                                       <option>本人</option>
+                                                                   </select>
+                                                                </div>
+                                                              </div>
+
+
                                                             </div>
                                                             <div class="row">
 
                                                               <div class="col-md-6">
                                                               <div class="form-group">
-                                                                  <label class="control-label">所在城市：</label>
+                                                                  <label class="control-label">客户联系地址：</label>
                                                                   <input type="text" placeholder="" class="form-control" /> </div>
                                                               </div>
                                                               <div class="col-md-6">
@@ -105,6 +111,37 @@
                                                                 </div>
                                                               </div>
                                                             </div>
+                                                            <div class="row">
+
+                                                              <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                  <label class="control-label">申请人姓名</label>
+                                                                  <input type="text" placeholder="" class="form-control" />
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-md-3">
+                                                                  <div class="form-group">
+                                                                    <label class="control-label">证件类型：</label>
+                                                                    <select class="form-control">
+                                                                      <option>请选择</option>
+                                                                       <option>身份证 </option>
+                                                                       <option>护照</option>
+                                                                       <option>其它 </option>
+                                                                   </select>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="col-md-3">
+                                                                  <div class="form-group">
+                                                                    <label class="control-label">证件号码：</label>
+                                                                    <input type="text" placeholder="" class="form-control" />
+                                                                  </div>
+                                                              </div>
+
+
+                                                            </div>
+
+
+
                                                             <div class="row">
 
                                                               <div class="col-md-3">
@@ -134,18 +171,21 @@
                                                               </div>
                                                               <div class="col-md-3">
                                                                 <div class="form-group">
-                                                                  <label class="control-label">意向专业：</label>
+                                                                  <label class="control-label">意向学校：</label>
                                                                   <input type="text" placeholder="" class="form-control" />
                                                                 </div>
                                                               </div>
                                                               <div class="col-md-3">
                                                                 <div class="form-group">
-                                                                  <label class="control-label">意向留学时间：</label>
+                                                                  <label class="control-label">意向专业：</label>
                                                                   <input type="text" placeholder="" class="form-control" />
                                                                 </div>
                                                               </div>
                                                             </div>
-
+                                                            <div class="form-group">
+                                                              <label class="control-label">备注：</label>
+                                                              <textarea placeholder="请填写备注内容，如客户的其它特殊需求" rows="5" class="form-control"></textarea>
+                                                            </div>
 
                                                             <div class="margiv-top-10">
                                                                 <a href="javascript:;" class="btn green"> 保存 </a>
@@ -159,145 +199,6 @@
                                                     <!-- END CHANGE PASSWORD TAB -->
                                                     <!-- PRIVACY SETTINGS TAB -->
                                                     <!-- END PRIVACY SETTINGS TAB -->
-
-                                                    <div class="tab-pane" id="tab_1_4">
-
-                                                      <form role="form" action="#">
-                                                          <div class="row">
-
-                                                            <div class="col-md-3">
-                                                              <div class="form-group">
-                                                                <label class="control-label">申请人姓名：</label>
-                                                                <input type="text" placeholder="" class="form-control" />
-                                                              </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                              <div class="form-group">
-                                                                <label class="control-label">性别：</label>
-                                                                <select class="form-control">
-                                                                  <option>请选择</option>
-                                                                   <option>男 </option>
-                                                                   <option>女</option>
-                                                               </select>
-                                                              </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                  <label class="control-label">证件类型：</label>
-                                                                  <select class="form-control">
-                                                                    <option>请选择</option>
-                                                                     <option>身份证 </option>
-                                                                     <option>护照</option>
-                                                                     <option>其它 </option>
-                                                                 </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                  <label class="control-label">证件号码：</label>
-                                                                  <input type="text" placeholder="" class="form-control" />
-                                                                </div>
-                                                            </div>
-
-                                                          </div>
-
-                                                          <div class="row">
-
-                                                            <div class="col-md-3">
-                                                              <div class="form-group">
-                                                                <label class="control-label">毕业院校：</label>
-                                                                <input type="text" placeholder="" class="form-control" />
-
-                                                              </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                              <div class="form-group">
-                                                                <label class="control-label">学校性质：</label>
-                                                                <select class="form-control">
-                                                    							<option value="">请选择</option>
-                                                    							<option value="">高端海本/国内顶尖院校</option>
-                                                    							<option value="">普通海本/国内985院校</option>
-                                                    							<option value="">国内211院校</option>
-                                                    							<option value="">国内其他重点大学</option>
-                                                    							<!-- <option value="">国内普通大学</option> -->
-                                                    							<option value="">其他</option>
-                                                               </select>
-                                                              </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                              <div class="form-group">
-                                                                <label class="control-label">平均成绩：</label>
-                                                                <input type="text" placeholder="" class="form-control" />
-
-                                                              </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                              <div class="form-group">
-                                                                <label class="control-label">奖项荣誉：</label>
-                                                                <input type="text" placeholder="" class="form-control" />
-
-                                                              </div>
-                                                            </div>
-                                                          </div>
-
-                                                          <div class="row">
-
-                                                            <div class="col-md-3">
-                                                              <div class="form-group">
-                                                                <label class="control-label">TOFEL：（分）</label>
-                                                                <input type="text" placeholder="" class="form-control" />
-
-                                                              </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                              <div class="form-group">
-                                                                <label class="control-label">IELTS：（分）</label>
-                                                                <input type="text" placeholder="" class="form-control" />
-                                                              </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                              <div class="form-group">
-                                                                <label class="control-label">GRE：（分）</label>
-                                                                <input type="text" placeholder="" class="form-control" />
-                                                              </div>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                              <div class="form-group">
-                                                                <label class="control-label">CET4：（分）</label>
-                                                                <input type="text" placeholder="" class="form-control" />
-                                                              </div>
-                                                            </div>
-                                                          </div>
-
-
-                                                          <div class="margiv-top-10">
-                                                              <a href="javascript:;" class="btn green"> 保存 </a>
-                                                          </div>
-                                                      </form>
-
-
-
-
-                                                    </div>
-
-                                                    <div class="tab-pane" id="tab_1_5">
-
-                                                      <div class="form-group">
-                                                        <label class="control-label">备注：</label>
-                                                        <textarea placeholder="请填写备注内容，如客户的其它特殊需求" rows="10" class="form-control"></textarea>
-                                                      </div>
-
-
-                                                          <div class="margiv-top-10">
-                                                              <a href="javascript:;" class="btn green"> 保存 </a>
-                                                          </div>
-                                                      </form>
-
-
-
-
-                                                    </div>
-
 
                                                 </div>
                                             </div>
