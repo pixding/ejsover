@@ -53,7 +53,7 @@
                     </div>
                     <form class="form-inline" role="form" style="margin-bottom:15px; float:right;">
                       <%
-                      var status = ['新用户','已创建计划','已支付','留学申请中'];
+                      var status = ['未出方案','已出方案','已签订合同','已收集资料'];
                       %>
                       <div class="form-group">
                           <select class="form-control input-small">
@@ -74,11 +74,11 @@
                           </div>
                           <div class="form-group">
                               <select class="form-control input-small">
-                                <option>请选择申请学历</option>
-                                 <option>高中</option>
-                                 <option>学士</option>
-                                 <option>硕士</option>
-                                 <option>博士</option>
+                                <option>请选择渠道</option>
+                                 <option>百度推广</option>
+                                 <option>微信</option>
+                                 <option>线下活动1</option>
+                                 <option>线下活动2</option>
                              </select>
                           </div>
 
@@ -101,11 +101,12 @@
                                         <th >
 
                                         </th>
-                                        <th>渠道/负责人</th>
-
-                                        <th>客户联系方式</th>
+                                        <th>所属机构</th>
+                                        <th>客户/来源</th>
+                                        <th>跟进人</th>
                                         <th>留学意向</th>
                                         <th>客户状态</th>
+                                        <th>下次沟通时间</th>
 
                                         <th class="numeric" style="text-align:center;"> 操作 </th>
                                     </tr>
@@ -115,13 +116,14 @@
                                   <%for(var i =0;i<15;i++){%>
                                     <tr>
                                       <td> <input type="checkbox" class="checkboxes" value="1" /> </td>
-                                      <td>新东方留学有限公司/王伟(18100323333) </td>
+                                      <td>新东方留学有限公司 </td>
 
-                                      <td>李先生(13700993233)</td>
-                                      <td>美国/芝加哥大学/硕士/生物工程</td>
+                                      <td>李天/线下活动1</td>
+                                      <td>小王</td>
+                                      <td>美国</td>
                                       <td><%= status[i%4]%></td>
+                                      <td><span style="color:red;">2017-04-02</span></td>
                                       <td style="text-align:center;" >
-                                        <a href="/customer/create" style="margin-right:10px;"><i class="fa fa-link"></i>留学申请</a>
                                         <a href="/customer/customerdetail" style="margin-right:10px;"><i class="fa fa-link"></i>查看详情</a>
                                       </td>
                                     </tr>
