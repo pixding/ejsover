@@ -66,17 +66,17 @@
                         <!--end col-md-4-->
                     </div>
 
-
+                    <div style="margin-bottom:20px; color:#999;">此处加一个交互说明，当上传后，增加<i class="fa fa-check-square"></i>这个标识，tab会切换到还未完成的地方。 看看是否这样OK.</div>
                     <div class="row">
                       <div class="col-md-12">
 
                       <div class="tabbable-custom ">
                             <ul class="nav nav-tabs ">
-                                <li class="active">
-                                    <a href="#tab_5_2" data-toggle="tab" aria-expanded="false"> 个人信息 </a>
+                                <li class="">
+                                    <a href="#tab_5_2" data-toggle="tab" aria-expanded="false"> 个人信息 <i style="color:#0c0;" class="fa fa-check-square"></i></a>
                                 </li>
 
-                                <li class="">
+                                <li class="active">
                                     <a href="#tab_5_4" data-toggle="tab" aria-expanded="false"> 材料清单 </a>
                                 </li>
                                 <li class="">
@@ -84,7 +84,7 @@
                                 </li>
                             </ul>
                             <div class="tab-content">
-                              <div class="tab-pane active" id="tab_5_2" style="padding-bottom:50px;">
+                              <div class="tab-pane " id="tab_5_2" style="padding-bottom:50px;">
 
                                 <form action="../assets/global/plugins/dropzone/upload.php" class="dropzone dropzone-file-area" id="my-dropzone" style="width: 500px; margin-top: 50px;">
                                     <h3 class="sbold">拖动文件或点击此处进行上传</h3>
@@ -92,7 +92,7 @@
                                 </form>
 
                               </div>
-                                <div class="tab-pane " id="tab_5_4">
+                                <div class="tab-pane active" id="tab_5_4">
 
                                   <div class="table-scrollable table-scrollable-borderless">
                                         <table class="table table-hover table-light">
