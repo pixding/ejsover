@@ -111,7 +111,7 @@
                             </div>
                           </div>
                           <div class="row">
-                              <div class="col-md-8">
+                              <div class="col-md-9">
                                   <div class="form-group">
                                     <div >
                                       <table class="table table-hover table-light">
@@ -122,6 +122,8 @@
                                                   <th> 截止日期 </th>
                                                   <th> 申请状态 </th>
                                                   <th> 附件 </th>
+                                                  <th> 学费 </th>
+                                                  <th> 其它 </th>
                                               </tr>
                                           </thead>
                                           <tbody>
@@ -132,6 +134,8 @@
                                                 <td>2017-09-09</td>
                                                 <td>未申请</td>
                                                 <td></td>
+                                                <td></td>
+                                                <td></td>
                                               </tr>
                                               <tr>
                                                 <td>哈佛大学</td>
@@ -139,6 +143,8 @@
                                                 <td>2017-09-09</td>
                                                 <td>申请中</td>
 
+                                                <td></td>
+                                                <td></td>
                                                 <td></td>
                                               </tr>
                                               <tr>
@@ -154,7 +160,13 @@
                                                     <input type="file" name="files[]" multiple="">
                                                   </span>
                                                 </td>
-                                              </tr>
+                                                <td><a class="popovers"  data-container="body" data-trigger="hover"
+                                                  data-placement="bottom" data-content="书本费:$110.00  学杂费:$200.00" >$162,700 <i class="fa fa-pencil"></i></a>
+
+                                                <td>
+                                                  EMS:201709434433 <a><i class="fa fa-pencil"></i></a>
+                                                </td>
+                                                </tr>
                                           </tbody>
                                       </table>
                                     </div>
@@ -271,6 +283,9 @@
 
                                         <div>
                                           <a href="#" style="margin:10px 0 0 10px;" data-target="#stack1" data-toggle="modal" class="btn green">批量转派</a>
+
+                                          <a href="javascript:;" style="margin:10px 0 0 10px;" class="btn green J_addx">添加文书</a>
+
                                           <div style="float:right;">
                                             <a href="#" style="margin:10px 0 0 10px;" class="btn red">文书已全部确认，申请留学</a>
                                           </div>
@@ -424,6 +439,10 @@
            $(".select2, .select2-multiple").select2({
                 placeholder: "选择",
                 width: null
+            });
+
+            $(".J_addx").on("click",function(){
+              alert("留学申请后，可以上传回传等文书。点此处后，会弹出表单，具体需要根据回传文书特点才能设计！");
             });
          })
          </script>

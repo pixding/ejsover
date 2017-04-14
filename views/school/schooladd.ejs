@@ -60,7 +60,7 @@
                                                         <a href="#tab_1_1" data-toggle="tab">基本信息</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#tab_1_3" data-toggle="tab">专业信息</a>
+                                                        <a href="#tab_1_3" data-toggle="tab">学院专业管理</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -174,47 +174,115 @@
                                                       <div class="row" style="margin-bottom:10px;">
                                                         <div class="col-md-12">
                                                           <button id="genpassword" class="btn btn-success" type="button"
-                                                          data-target="#response" data-toggle="modal"><i class="fa fa-arrow-left fa-plus"></i> 添加专业</button>
+                                                          data-target="#response" data-toggle="modal"><i class="fa fa-arrow-left fa-plus"></i> 添加学院</button>
+                                                          <a title="此处有模板，下载填完后，上传。" style="margin-left:10px;">导入学院</a>
 
                                                         </div>
                                                       </div>
-                                                      <div class="row">
-                                                          <div class="col-md-12">
-                                                            <div class="" id="sample_1">
-                                                                <table class="table table-striped table-bordered table-hover">
-                                                                  <thead class="flip-content">
-                                                                      <tr>
-                                                                          <th >
-                                                                            序号
-                                                                          </th>
-                                                                          <th>
-                                                                            专业
-                                                                          </th>
-                                                                          <td class="numeric"> 代码 </td>
-                                                                          <th class="numeric"> 学历 </th>
-                                                                          <th class="numeric"> 简介 </th>
-                                                                          <th class="numeric"> 操作 </th>
-                                                                      </tr>
-                                                                  </thead>
-                                                                  <tbody>
-                                                                    <%for(var i =0;i<15;i++){%>
-                                                                      <tr>
-                                                                          <td style="text-align:center;"> <a href="#"><%= i+1%></a> </td>
-                                                                          <td class="numeric"> 法学院--法学 </td>
-                                                                          <td class="numeric"> EX000DR<%= i%> </td>
-                                                                          <td class="numeric"> 硕士 </td>
-                                                                          <td class="numeric"> 专业排名第五，5年制，毕业后扮发证书 </td>
-                                                                          <td style="text-align:center;" >
-                                                                            <a data-target="#response" data-toggle="modal"><i class="fa fa-pencil"></i>编辑</a>
-                                                                          </td>
-                                                                      </tr>
-                                                                    <%}%>
 
-                                                                  </tbody>
-                                                              </table>
+
+
+
+
+
+                                                      <div class="row">
+                                                        <div class="col-md-12">
+                                                            <!-- BEGIN SAMPLE TABLE PORTLET-->
+                                                            <div class="portlet box blue">
+                                                                <div class="portlet-title">
+                                                                    <div class="caption">软件学院 (理科)  </div>
+                                                                    <div class="tools">
+                                                                        <a href="javascript:;" class="collapse" title="展开"> </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="portlet-body">
+                                                                  <table style="margin-top:10px;" class="table table-striped table-bordered table-hover">
+                                                                    <thead class="flip-content">
+                                                                        <tr>
+                                                                            <th >
+                                                                              序号
+                                                                            </th>
+                                                                            <th>
+                                                                              专业
+                                                                            </th>
+                                                                            <th class="numeric"> 简介 </th>
+                                                                            <th class="numeric"> 操作 </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+
+                                                                        <tr>
+                                                                            <td style="text-align:center;"> <a href="#">1</a> </td>
+                                                                            <td class="numeric"> 计算机科学 </td>
+                                                                            <td class="numeric"> 专业排名第五，5年制，毕业后扮发证书 </td>
+                                                                            <td style="text-align:center;" >
+                                                                              <a ><i class="fa fa-pencil"></i>编辑</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="text-align:center;"> <a href="#">2</a> </td>
+                                                                            <td class="numeric"> 数字媒体 </td>
+                                                                            <td class="numeric"> 专业排名第五，5年制，毕业后扮发证书 </td>
+                                                                            <td style="text-align:center;" >
+                                                                              <a ><i class="fa fa-pencil"></i>编辑</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                </div>
                                                             </div>
-                                                          </div>
+                                                            <!-- END SAMPLE TABLE PORTLET-->
+                                                        </div>
+
                                                       </div>
+
+
+
+                                                      <div class="row">
+                                                        <div class="col-md-12">
+                                                            <!-- BEGIN SAMPLE TABLE PORTLET-->
+                                                            <div class="portlet box blue">
+                                                                <div class="portlet-title">
+                                                                    <div class="caption">法学院 (文科)  </div>
+                                                                    <div class="tools">
+                                                                        <a href="javascript:;" class="collapse" title="展开"> </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="portlet-body">
+                                                                  <table style="margin-top:10px;" class="table table-striped table-bordered table-hover">
+                                                                    <thead class="flip-content">
+                                                                        <tr>
+                                                                            <th >
+                                                                              序号
+                                                                            </th>
+                                                                            <th>
+                                                                              专业
+                                                                            </th>
+                                                                            <th class="numeric"> 简介 </th>
+                                                                            <th class="numeric"> 操作 </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+
+                                                                        <tr>
+                                                                            <td style="text-align:center;"> <a href="#">1</a> </td>
+                                                                            <td class="numeric"> 国税法 </td>
+                                                                            <td class="numeric"> 专业排名第五，5年制，毕业后扮发证书 </td>
+                                                                            <td style="text-align:center;" >
+                                                                              <a ><i class="fa fa-pencil"></i>编辑</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <!-- END SAMPLE TABLE PORTLET-->
+                                                        </div>
+
+                                                      </div>
+
+
+
 
 
 
@@ -246,7 +314,7 @@
         <div id="response" class="modal fade" tabindex="-1" data-width="760">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                <h4 class="modal-title">添加专业</h4>
+                <h4 class="modal-title">添加学院</h4>
             </div>
             <div class="modal-body">
 
@@ -257,27 +325,23 @@
 
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label class="control-label">专业名称：</label>
+                            <label class="control-label">学院名称：</label>
                             <input type="text" placeholder="" class="form-control" />
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label class="control-label">学历：</label>
+                            <label class="control-label">类别：</label>
                             <select class="form-control input-small">
                                 <option>请选择</option>
-                                <option>高中</option>
-                                <option>学士</option>
-                                <option>硕士</option>
-                                <option>博士</option>
+                                <option>工科</option>
+                                <option>理科</option>
+                                <option>文科</option>
+                                <option>其它</option>
                             </select>
                           </div>
                         </div>
                       </div>
-                      <div class="form-group">
-                          <label class="control-label">专业介绍：</label>
-                          <input type="text"  class="form-control" />
-                        </div>
                   </form>
 
             </div>
