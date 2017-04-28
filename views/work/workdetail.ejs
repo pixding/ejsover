@@ -175,7 +175,50 @@
                               </div>
                             </div>
 
+                            <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="control-label">费用明细：</label>
+                                    <a href="#" data-target="#model-fy" data-toggle="modal"  style="color:blue; text-decoration:underline;">添加记录</a>
+                                  </div>
+                              </div>
 
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                      <div >
+                                        <table class="table table-hover table-light">
+                                            <thead>
+                                                <tr class="uppercase">
+                                                    <th> 学校及项目  </th>
+                                                    <th> 申请费用 </th>
+                                                    <th> 国际快递费 </th>
+                                                    <th> 合计 </th>
+                                                    <th> 备注 </th>
+                                                    <th> 其它 </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td>西北大学</td>
+                                                  <td>$100</td>
+
+                                                  <td>$60</td>
+                                                  <td>￥1600</td>
+                                                  <td>双录取</td>
+                                                  <td><a href="#" data-target="#model-fy" data-toggle="modal" ><i class="fa fa-pencil"></i></a></td>
+                                                
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                      </div>
+
+                                    </div>
+                                </div>
+                              </div>
 
 
                       </div>
@@ -230,7 +273,14 @@
                                                       <a href="javascript:;">留学PS.rar</a>
                                                       <button type="button" class="btn btn-sm">
                                                         <i class="fa fa-trash"></i>
-                                                    </button>
+                                                      </button>
+                                                      <div style="margin-top:10px;">
+                                                        <span class="btn green fileinput-button">
+                                                          <i class="fa fa-plus"></i>
+                                                          <span> 继续上传 </span>
+                                                          <input type="file" name="files[]" multiple="">
+                                                        </span>
+                                                      </div>
                                                     </td>
                                                     <td>
                                                         <span>已确认</span>
@@ -428,6 +478,7 @@
         <!-- BEGIN FOOTER -->
 
         <% include ../customer/model-gj0%>
+        <% include ../work/model-fy%>
           <% include ./school-info%>
         <% include ../module/bottom%>
         <!-- END FOOTER -->
