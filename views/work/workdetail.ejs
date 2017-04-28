@@ -160,11 +160,10 @@
                                                     <input type="file" name="files[]" multiple="">
                                                   </span>
                                                 </td>
-                                                <td><a class="popovers"  data-container="body" data-trigger="hover"
-                                                  data-placement="bottom" data-content="书本费:$110.00  学杂费:$200.00" >$162,700 <i class="fa fa-pencil"></i></a>
+                                                <td>$162,700 <a href="javascript:;" class="J_editxf">  <i class="fa fa-pencil"></i></a>
 
                                                 <td>
-                                                  EMS:201709434433 <a>  <i class="fa fa-pencil"></i></a>
+                                                  EMS:201709434433 <a href="javascript:;" class="J_editxf">  <i class="fa fa-pencil"></i></a>
                                                 </td>
                                                 </tr>
                                           </tbody>
@@ -209,7 +208,7 @@
                                                   <td>￥1600</td>
                                                   <td>双录取</td>
                                                   <td><a href="#" data-target="#model-fy" data-toggle="modal" ><i class="fa fa-pencil"></i></a></td>
-                                                
+
                                                 </tr>
 
                                             </tbody>
@@ -487,6 +486,10 @@
          <script src="/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
          <script>
          $(function(){
+           $(".J_editxf").on("click",function(){
+             $(this).parents("td").html('<input type="text"/>');
+           })
+
            $(".select2, .select2-multiple").select2({
                 placeholder: "选择",
                 width: null
