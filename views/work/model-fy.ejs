@@ -10,49 +10,78 @@
 
               <form role="form" action="#">
                 <div class="row">
+                  <div class="col-md-11">
 
-                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label class="control-label">学校及项目：</label>
+                      <select class="form-control  input-sm input-small">
+                        <option value="1">请选择</option>
+                        <option value="2">项目1</option>
+                        <option value="e">项目2</option>
+                      </select>
+                    </div>
 
-                      <div class="form-group">
-                        <label class="control-label">学校及项目：</label>
-                        <span>
-                          <input type="text" class="form-control"/>
-                        <span>
-                      </div>
+
                   </div>
-                  <div class="col-md-2">
 
-                      <div class="form-group">
-                        <label class="control-label">申请费：</label>
-                        <span>
-                          <input type="text" class="form-control"/>
-                        <span>
-                      </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-md-11">
+                  <div class="table-scrollable">
+
+                      <table class="table table-hover table-light">
+                        <thead>
+                            <tr>
+                                <th> 费用类型 </th>
+                                <th> 费用单位 </th>
+                                <th> 价格 </th>
+                                <th style="text-align:center;">
+                                  <a href="#" style="margin-right:10px;">
+                                    <i class="fa fa-plus"></i>添加
+                                  </a> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+
+                              <td class="numeric">
+                                <select class="form-control input-inline input-sm input-small">
+                                  <option value="1">请选择</option>
+                                  <option value="2">某某申请费</option>
+                                  <option value="e">国际快递费</option>
+                              </select>
+                             </td>
+                             <td class="numeric">
+                               <select class="form-control input-inline input-sm input-small">
+                                 <option value="1">请选择</option>
+                                 <option value="2">$美元</option>
+                                 <option value="e">￥人民币</option>
+                             </select>
+                            </td>
+                            <td>
+                              <input type="text" class="form-control input-inline input-sm input-small"/>
+                            </td>
+
+                              <td style="text-align:center;" >
+                                <a >
+                                  <i class="fa fa-trash-o"></i>删除
+                                </a>
+                              </td>
+                          </tr>
+
+
+                        </tbody>
+                    </table>
                   </div>
-                  <div class="col-md-2">
-
-                      <div class="form-group">
-                        <label class="control-label">国际快递费：</label>
-                        <span>
-                          <input type="text" class="form-control"/>
-                        <span>
-                      </div>
-                  </div>
-                  <div class="col-md-2">
-
-                      <div class="form-group">
-                        <label class="control-label">合计：(元)</label>
-                        <span>
-                          <input type="text" class="form-control"/>
-                        <span>
-                      </div>
                   </div>
                 </div>
 
 
                   <div class="row">
 
-                    <div class="col-md-9">
+                    <div class="col-md-11">
                         <div class="form-group">
                           <label class="control-label">备注：</label>
                           <input type="text" class="form-control"/>

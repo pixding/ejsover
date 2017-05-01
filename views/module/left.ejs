@@ -71,13 +71,22 @@
 
                 </ul>
             </li>
-            <li class="nav-item  ">
+
+
+
+            <li class="nav-item  <% if(leftnav=="system"){%> active open <%}%> ">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-docs"></i>
                     <span class="title">字典定义</span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
+                  <li class="nav-item <% if(leftnav=="system"){%> active <%}%> ">
+                      <a href="/system/datasettinglist" class="nav-link ">
+                          <span class="title">材料模板设置</span>
+                      </a>
+                  </li>
+
                     <li class="nav-item  ">
                         <a href="/doing" class="nav-link ">
                             <span class="title">文书字典</span>
