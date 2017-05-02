@@ -74,7 +74,7 @@
 
 
 
-            <li class="nav-item  <% if(leftnav=="system"){%> active open <%}%> ">
+            <li class="nav-item  <% if(leftnav=="system" || leftnav=="system1"){%> active open <%}%> ">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-docs"></i>
                     <span class="title">字典定义</span>
@@ -84,6 +84,11 @@
                   <li class="nav-item <% if(leftnav=="system"){%> active <%}%> ">
                       <a href="/system/datasettinglist" class="nav-link ">
                           <span class="title">材料模板设置</span>
+                      </a>
+                  </li>
+                  <li class="nav-item <% if(leftnav=="system1"){%> active <%}%> ">
+                      <a href="/system/datasettinglist1" class="nav-link ">
+                          <span class="title">材料设置</span>
                       </a>
                   </li>
 
